@@ -43,7 +43,7 @@ Pornire:  ./subscriber **<ID_CLIENT> <IP_SERVER> <PORT_SERVER>**
     
 ## Clienti UDP
 
-Pornire: python3 udp_client.py **<IP_SERVER> <PORT_SERVER>**         
+Pornire: python3 udp_client.py \[--mode {all_once,manual,random}] \[--count COUNT] **<IP_SERVER> <PORT_SERVER>**         
 
 Mesajele formate de clientii UDP contin urmatoarele informatii:
 - nume topic
@@ -66,8 +66,6 @@ Pornire:  ./server **<PORT_DORIT>**
 - comunica cu clientii TCP si UDP si retine diverse informatii de la acestia
 
   ### 1) Comunicarea cu clientii UDP
-
-  Serverul
     - primeste mesaje de la clientii UDP si in functie de tipul de date, parseaza continutul 
     - daca un mesaj primit nu este conform cu formatul asteptat, va afisa un mesaj de eroare si va ignora acel mesaj
     - daca mesajul primit este valid, il va trimite tuturor clientilor abonati la acel topic care sunt online, iar pentru cei offline, care au SF = 1 pentru acel topic, il retine intr-o lista de mesaje asociate acelor clienti
