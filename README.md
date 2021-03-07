@@ -1,6 +1,6 @@
 # Client-Server-App
 
-Initializarea aplicatiei este data de pornirea server-ului, la care ulterior se vor putea conecta un numar variabil de clienti TCP si UDP.
+Initializarea aplicatiei este data de pornirea server-ului, la care ulterior se vor putea conecta un numar variabil de clienti TCP si UDP. Clientii TCP sunt subscriberi care se aboneaza la diverse topicuri publicate de clientii UDP.
 
 
 ## Clienti TCP (Subscribers)
